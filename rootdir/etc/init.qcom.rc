@@ -403,6 +403,7 @@ on post-fs-data
 
     #Create dir for dolby
     mkdir /data/vendor/dolby 0770 media media
+    mkdir /data/vendor/multimedia 0775 system system
 
 service nqnfcinfo /system/vendor/bin/nqnfcinfo
     class late_start
