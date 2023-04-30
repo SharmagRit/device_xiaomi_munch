@@ -8,20 +8,12 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-<<<<<<<< HEAD:cherish_munch.mk
-# Inherit some common lineage stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
-========
 # Inherit some common BananaDroid stuff
 $(call inherit-product, vendor/banana/config/common.mk)
->>>>>>>> 04d5710 (Banana-ify):banana_munch.mk
 
 # Inherit from munch device
 $(call inherit-product, device/xiaomi/munch/device.mk)
 
-<<<<<<<< HEAD:cherish_munch.mk
-PRODUCT_NAME := cherish_munch
-========
 #Banandroid Stuff
 BANANA_MAINTAINER := Mudit
 TARGET_ENABLE_BLUR := true
@@ -40,7 +32,6 @@ TARGER_SUPPORTS_NEXT_GEN_ASSISTANT := true
 TARGET_USE_GOOGLE_TELEPHONY := true
 
 PRODUCT_NAME := banana_munch
->>>>>>>> 04d5710 (Banana-ify):banana_munch.mk
 PRODUCT_DEVICE := munch
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
@@ -48,18 +39,7 @@ PRODUCT_MODEL := POCO F4
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Bootanimation Resolution
-TARGET_BOOT_ANIMATION_RES := 1080
-
-# Inherit some props from Cherish
-CHERISH_BUILD_TYPE := OFFICIAL
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=HDzungx
-
-# Inherit some common device props
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_CALL_RECORDING := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
-BUILD_FINGERPRINT := Redmi/munch/munch:13/RKQ1.211001.001/V14.0.2.0.TLMMIXM:user/release-keys
+BUILD_FINGERPRINT := Redmi/munch/munch:13/RKQ1.211001.001/V14.0.1.0.TLMMIXM:user/release-keys
